@@ -21,12 +21,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
         document.getElementById("number3").value =x[2];
     });
 
-    document.getElementById("ToTheFourth").addEventListener("click", function () {
-        let x =myArray.map(tothefourth);
+   document.getElementById('tothefourth').addEventListener("click", result);
+    function result () {
+        let x =myArray.map((num)=>num*num*num*num);
         document.getElementById("number1").value =x[0];
         document.getElementById("number2").value =x[1];
         document.getElementById("number3").value =x[2];
-    });
+    };
  
 });
 
